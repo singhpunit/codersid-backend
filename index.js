@@ -45,7 +45,9 @@ const start = async () => {
     }
 }
 
-
+app.get("/test",(req,res)=>{
+    res.send("ok")
+})
 app.use('/createAdmin', admin);
 app.use('/api/students', students);
 app.use('/api/user', user);
